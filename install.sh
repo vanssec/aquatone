@@ -14,7 +14,7 @@ go mod tidy
 #!/bin/bash
 
 # Update regex.go file in the first location
-sed -i 's/for _, target := range xurls.Relaxed().FindAllString(scanner.Text(), -1) {/for _, target := range xurls.Relaxed.FindAllString(scanner.Text(), -1) {/' /root/go/pkg/mod/github.com/michenriksen/aquato>
+sed -i 's/for _, target := range xurls.Relaxed().FindAllString(scanner.Text(), -1) {/for _, target := range xurls.Relaxed.FindAllString(scanner.Text(), -1) {/' /root/go/pkg/mod/github.com/michenriksen/aquatone@v1.7.0/parsers/regex.go
 
 # Update regex.go file in the second location (assuming it's in the Aqua Tone directory)
 sed -i 's/for _, target := range xurls.Relaxed().FindAllString(scanner.Text(), -1) {/for _, target := range xurls.Relaxed.FindAllString(scanner.Text(), -1) {/' parsers/regex.go
